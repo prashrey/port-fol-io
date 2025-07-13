@@ -1,0 +1,131 @@
+.main-wrap {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #f7d02c);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #000);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  /* Pokédex dark gray */
+  border-radius: 1.2em;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border: 2px solid #f7d02c;
+  /* Pokédex yellow accent */
+}
+
+a,
+.header__link {
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: background 0.2s, color 0.2s; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+input,
+textarea,
+select {
+  border: 2px solid #f7d02c;
+  border-radius: 0.4em;
+  padding: 0.4em 0.8em;
+  font-size: 1em;
+  transition: border 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid #30a7d7;
+  outline: none;
+}
+
+/* Utility classes for theme */
+.bg-pokedex-red {
+  background: #e3350d !important;
+}
+
+.bg-pokedex-dark {
+  background: #2a2a2a !important;
+}
+
+.text-pokedex-yellow {
+  color: #f7d02c !important;
+}
+
+.text-pokedex-blue {
+  color: #30a7d7 !important;
+}
+
+.text-pokedex-white {
+  color: #fff !important;
+}
+
+.text-pokedex-dark {
+  color: #222 !important;
+}
+
+/* Utility classes for Pokémon grades */
+
+.grade-pokemon-yellow {
+  background-color: #f9cf30;
+}
+
+.grade-pokemon-orange {
+  background-color: #f68a45;
+}
+
+.grade-pokemon-blue {
+  background-color: #6493eb;
+}
+
+.grade-pokemon-green {
+  background-color: #74cb48;
+}
+
+.grade-pokemon-purple {
+  background-color: #70559b;
+}
+
+.grade-pokemon-red {
+  background-color: #fb5584;
+}

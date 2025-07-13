@@ -1,0 +1,63 @@
+{
+  "name": "PRASHREY",
+  "title": "Full Stack Developer",
+  "experience_years": 9,
+  "contact": {
+    "email": "you@example.com",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourprofile",
+    "location": "[Location]"
+  },
+  "summary": "Versatile software developer with 9 years of experience building scalable, high-performance web applications. Initially focused on frontend development, now actively transitioning into full stack development with practical skills in React, Next.js, Redux, and growing backend expertise in Node.js and Express.js. Strong advocate for accessibility and Core Web Vitals optimization. Proven track record in leading modules, mentoring developers, and delivering high-quality code in agile environments.",
+  "experience": [
+    {
+      "role": "Module Lead",
+      "company": "Bold Technologies",
+      "location": "Hybrid",
+      "duration": "Jan 2019 – Present",
+      "responsibilities": [
+        "Led design, development, and maintenance of application modules in an Agile environment",
+        "Coded and debugged complex features with focus on performance",
+        "Optimized accessibility and Core Web Vitals",
+        "Reviewed code, mentored juniors, and documented specs"
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "Wipro Infotech",
+      "location": "Onsite",
+      "duration": "Nov 2015 – Dec 2018",
+      "responsibilities": [
+        "Built C# microservices and MVC-based bot automation tools",
+        "Managed SQL databases, wrote new features for enterprise tools",
+        "Designed cross-platform apps with strong UX"
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": ["React", "Redux", "Next.js", "HTML", "CSS", "JavaScript"],
+    "backend": ["Node.js", "Express.js"],
+    "testing": ["Jest", "Unit Testing"],
+    "performance": ["Core Web Vitals", "Lighthouse"],
+    "devops": ["Git", "CI/CD"],
+    "soft_skills": ["Communication", "Teamwork"]
+  },
+  "certifications": [
+    {
+      "title": "React Development",
+      "issuer": "Udemy",
+      "year": 2019
+    },
+    {
+      "title": "Next.js Complete Guide",
+      "issuer": "Udemy",
+      "year": 2024
+    }
+  ],
+  "education": {
+    "degree": "B.Tech in Computer Science",
+    "institution": "Krishna Engineering College",
+    "location": "Ghaziabad, India",
+    "years": "2011 – 2015"
+  }
+}
