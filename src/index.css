@@ -1,5 +1,4 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -7,12 +6,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.2s;
 }
 
 body {
@@ -24,23 +17,3 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto #f7d02c;
-}
-/* 
-::-webkit-scrollbar {
-  width: 10px;
-  background: #2a2a2a;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #f7d02c;
-  border-radius: 8px;
-}
-
-::selection {
-  background: #f7d02c;
-  color: #222;
-} */

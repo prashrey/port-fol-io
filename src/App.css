@@ -1,23 +1,25 @@
+body,
+#root {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  opacity: 1;
+  width: 4px;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .main-wrap {
   display: grid;
   grid-template-columns: 2fr 2fr;
   max-width: 1340px;
   margin: 0 auto;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #f7d02c);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #000);
 }
 
 @keyframes logo-spin {
@@ -38,28 +40,9 @@
 
 .card {
   padding: 2em;
-  /* Pokédex dark gray */
   border-radius: 1.2em;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   border: 2px solid #f7d02c;
-  /* Pokédex yellow accent */
-}
-
-a,
-.header__link {
-  text-decoration: none;
-  transition: color 0.2s;
-  font-weight: 500;
-}
-
-button {
-  border: none;
-  border-radius: 0.5em;
-  padding: 0.5em 1.2em;
-  font-weight: bold;
-  cursor: pointer;
-  /* transition: background 0.2s, color 0.2s; */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 input,
@@ -79,7 +62,6 @@ select:focus {
   outline: none;
 }
 
-/* Utility classes for theme */
 .bg-pokedex-red {
   background: #e3350d !important;
 }
