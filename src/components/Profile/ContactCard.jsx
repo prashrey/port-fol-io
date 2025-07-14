@@ -9,7 +9,6 @@ const ContactCard = () => {
       </div>
       <div className="profile-content">
         <h1 className="profile-name">Prashrey</h1>
-        
       </div>
     </StyledCard>
   );

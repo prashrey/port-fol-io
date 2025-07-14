@@ -41,6 +41,10 @@ export const StyledCard = styled.section`
   background-size: cover;
   /* filter: brightness(0.5); */
 
+  @media (max-width: 600px) {
+    width: calc(100vw - 60px);
+  }
+
   .profile-header {
     display: flex;
     justify-content: center;
@@ -81,17 +85,24 @@ export const StyledCard = styled.section`
     .profile-image {
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #000;
+      /* border: 4px solid #000; */
       /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     }
 
-    .profile-content {
-      filter: blur(20px);
-      transition: filter 0.5s ease-in-out;
+    @media (max-width: 600px) {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  .profile-content {
+    filter: blur(15px);
+    transition: filter 0.5s ease-in-out;
 
-      &:hover {
-        filter: blur(0);
-      }
+    &:hover {
+      filter: blur(0);
+    }
+    @media (max-width: 600px) {
+      filter: none;
     }
   }
 `;
@@ -99,6 +110,10 @@ export const StyledCard = styled.section`
 export const StyledProfile = styled.div`
   padding: 20px;
   /* user-select: none; */
+  @media (max-width: 600px) {
+    padding: 0;
+    max-width: inherit;
+  }
 `;
 
 export const SkillList = styled.ul`
@@ -115,12 +130,12 @@ export const SkillList = styled.ul`
   transform-style: preserve-3d;
   transform: perspective(1000px);
 
+  @media screen and (max-width: 600px) {
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
   .profile-skill-list-item {
-    /* display: flex;
-    justify-content: space-around; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* font-size: 12px; */
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
@@ -202,6 +217,54 @@ export const SkillList = styled.ul`
       padding: 5px 10px;
       border-radius: 15px;
       margin: 0 5px;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      padding: 15px 10px;
+      filter: none;
+
+      &:hover {
+        filter: none;
+        transform: translateZ(100px);
+      }
+
+      &:hover + * {
+        filter: none;
+        transform: translateZ(80px); // rotateY(40deg);
+      }
+
+      &:hover + * + * {
+        filter: none;
+        transform: translateZ(50px); // rotateY(20deg);
+      }
+
+      &:hover + * + * + * {
+        filter: none;
+        transform: translateZ(30px); // rotateY(10deg);
+      }
+
+      &:has(+ *:hover) {
+        filter: none;
+        transform: translateZ(80px); // rotateY(-40deg);
+      }
+
+      &:has(+ * + *:hover) {
+        filter: none;
+        transform: translateZ(50px); // rotateY(-20deg);
+      }
+      &:has(+ * + * + *:hover) {
+        filter: none;
+        transform: translateZ(30px); // rotateY(-10deg);
+      }
+
+      strong {
+        display: block;
+        margin-bottom: 15px;
+      }
+      .profile-skill-names-wrap {
+        justify-content: center;
+      }
     }
   }
 `;

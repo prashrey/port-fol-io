@@ -8,7 +8,13 @@ export const StyledContent = styled.aside`
   gap: 20px;
   border-spacing: 10px;
   border-left: 10px solid #fff;
+
+  @media screen and (max-width: 600px) {
+    border-left: none;
+    border-spacing: 0;
+  }
 `;
+
 export const StyledSection = styled.section`
   @property --angle {
     syntax: "<angle>";

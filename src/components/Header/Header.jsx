@@ -3,16 +3,16 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiGmail } from "react-icons/si";
 import {
   HeaderWrapper,
-  Brand,
+  // Brand,
   BrandLogo,
-  Nav,
-  NavLink,
+  // Nav,
+  // NavLink,
   RightSection,
   Socials,
-  Toggle,
-  ToggleLabel,
-  SwitchLabel,
-  Slider,
+  // Toggle,
+  // ToggleLabel,
+  // SwitchLabel,
+  // Slider,
 } from "./Header.styled";
 
 const Header = () => {
@@ -49,7 +49,7 @@ const Header = () => {
           <a href="https://leetcode.com/u/prashrey/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
             <SiLeetcode size={40} />
           </a>
-          <a href="mailto:example@email.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail">
+          <a href="mailto:prashreyh@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail">
             <SiGmail size={40} />
           </a>
         </Socials>
