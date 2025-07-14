@@ -3,36 +3,17 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode, SiGmail } from "react-icons/si";
 import {
   HeaderWrapper,
-  // Brand,
   BrandLogo,
-  // Nav,
-  // NavLink,
   RightSection,
   Socials,
-  // Toggle,
-  // ToggleLabel,
-  // SwitchLabel,
-  // Slider,
 } from "./Header.styled";
 
 const Header = () => {
-  // const [isNerdMode, setIsNerdMode] = useState(false);
-
-  // const handleModeChange = () => {
-  //   setIsNerdMode(!isNerdMode);
-  // };
-
   return (
     <HeaderWrapper>
-      {/* <Brand>PRASHREY</Brand> */}
       <BrandLogo>
         <img className="profile-experience-logo" height={60} width={60} src="/logo.svg" alt="Bold Technologies Logo" />
       </BrandLogo>
-      {/* <Nav>
-        <NavLink href="#experience">Experience</NavLink>
-        <NavLink href="#projects">Projects</NavLink>
-        <NavLink href="#summary">Summary</NavLink>
-      </Nav> */}
       <RightSection>
         <Socials>
           <a
@@ -53,13 +34,6 @@ const Header = () => {
             <SiGmail size={40} />
           </a>
         </Socials>
-        {/* <Toggle>
-          <ToggleLabel>{isNerdMode ? "nerd" : "Dev"}</ToggleLabel>
-          <SwitchLabel>
-            <input type="checkbox" checked={isNerdMode} onChange={handleModeChange} />
-            <Slider />
-          </SwitchLabel>
-        </Toggle> */}
       </RightSection>
     </HeaderWrapper>
   );
